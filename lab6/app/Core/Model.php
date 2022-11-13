@@ -71,10 +71,12 @@ abstract class Model implements DbModelInterface
      */
     public function sort($params)
     {
-        /*
-          TODO
-          return $this;
-         */
+        if (count($params) > 0) {
+            $this->sql .= sprintf(
+                " order by %s",
+                Util::keyValueToList($params, "%s %s")
+            );
+        }
         return $this;
     }
 

@@ -14,7 +14,7 @@ class ErrorController extends Controller
 
     /**
      * Not found action. Called when router did not find needed action to process.
-     * 
+     *
      * @return void
      */
     public function error404Action(): void
