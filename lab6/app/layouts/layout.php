@@ -21,7 +21,7 @@
             <?= $this->get('content'); ?>
         </div>
         
-        <hr style="margin:50px 5px;background-color: black;height: 1px;">
+        <hr style="margin:50px 5px;background-color: pink;height: 1px; border-radius: 90px">
         <footer class="container-fluid text-center">
             <p>Test Shop Copyright</p>
         </footer>

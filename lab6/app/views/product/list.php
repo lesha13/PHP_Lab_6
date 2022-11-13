@@ -34,8 +34,10 @@ foreach($products as $product)  :
         <p> Кількість: <?php echo $product['qty']?></p>
         <p><?php if(!($product['qty'] > 0)) { echo 'Нема в наявності'; } ?></p>
         <p>
-            <?= \Core\Url::getLink('/product/edit', 'Редагувати', array('id'=>$product['id'])); ?>
+            <?= \Core\Url::getLink('/product/edit', 'Edit', array('id'=>$product['id'])); ?>
+        </p>
+        <p>
+            <?= \Core\Url::getLink('/product/delete', 'Delete', array('id'=>$product['id'])); ?>
         </p>
     </div>
 <?php endforeach; ?>
-
