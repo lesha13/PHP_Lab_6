@@ -111,13 +111,13 @@ class DB
     public function deleteEntity(DbModelInterface $model, $id)
     {
         $dbh = $this->getConnection();
-        $sql = sprintf("DELETE FROM %s WHERE %s = ?",
+        $sql = sprintf("DELETE FROM %s WHERE %s = %s",
             $model->getTableName(),
-            $model->getPrimaryKeyName()
+            $model->getPrimaryKeyName(),
+            $id
         );
         $statement = $dbh->prepare($sql);
 
-        
-        return $statement->execute(array($id));
+        return $statement->execute();
     }
 }
