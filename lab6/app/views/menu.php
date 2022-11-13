@@ -10,8 +10,8 @@
     <?php endforeach; ?>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-        <li><a href="<?php echo $this->getBP();?>/customer/register/"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="<?php echo $this->getBP();?>/customer/login/"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="<?php echo $this->getBP();?>/app/views/customer/register/"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="<?php echo $this->getBP();?>/app/views/customer/login/"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
     </ul>
   </div>
 </nav>

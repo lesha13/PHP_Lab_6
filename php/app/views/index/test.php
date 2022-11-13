@@ -1,1 +1,0 @@
-<p style="color: #c26777">hello from view test</p>
