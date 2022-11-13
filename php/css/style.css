@@ -1,0 +1,18 @@
+.sku {
+    color: pink;
+}
+
+.product {
+    border: dotted 2px gray;
+    border-radius: 5px;
+    margin:20px;
+    padding: 20px;
+}
+
+.price {
+    color: black;
+    font-size: 22px;
+}
+/*.header{*/
+/*    background-color: aqua;*/
+/*}*/
